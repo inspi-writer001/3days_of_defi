@@ -1,6 +1,6 @@
 # 3 Days of DeFi: the_anchor_founder x Solana Turbine
 
-[![Watch the Highlight Video](https://i.ibb.co/SXs8sLd0/Screenshot-from-2026-01-14-17-57-59.png)](https://x.com/solanaturbine/status/2010366944642494631)
+![Watch the Highlight Video](https://i.ibb.co/SXs8sLd0/Screenshot-from-2026-01-14-17-57-59.png) https://x.com/solanaturbine/status/2010366944642494631
 
 ## About
 
