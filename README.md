@@ -10,7 +10,7 @@ The goal of this project is to build a comprehensive DeFi suite on Solana using 
 
 ## Roadmap
 
-### Day 1: Constant Product AMM (Completed)
+### Day 1: Constant Product AMM
 
 Implementation of a decentralized exchange using the standard $X \times Y = K$ constant product curve. This module allows users to create pools, provide liquidity, and swap tokens.
 
@@ -82,4 +82,18 @@ The `Config` account manages the state of the pool, including authority keys and
 │   └── amm.ts
 ├── Anchor.toml
 └── package.json
+
 ```
+
+## Build Note
+
+If `anchor build` fails with an error related to `constant_time_eq` (e.g., "failed to parse manifest"), it is due to a dependency update incompatible with the current Solana BPF toolchain.
+
+To fix this, pin `blake3` to version 1.8.2 by running the following command in your terminal:
+
+```bash
+cargo update -p blake3 --precise 1.8.2
+
+```
+
+This prevents the package manager from pulling in the incompatible Rust 2024 edition crate.

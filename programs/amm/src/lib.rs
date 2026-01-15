@@ -18,4 +18,12 @@ pub mod amm {
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         ctx.accounts.intialize(ctx.bumps)
     }
+
+    pub fn deposit(ctx: Context<Deposit>, args: DepositArgs) -> Result<()> {
+        ctx.accounts.deposit(args)
+    }
+
+    pub fn withdraw(ctx: Context<Withdraw>, args: WithdrawArgs) -> Result<()> {
+        ctx.accounts.withdraw(args)
+    }
 }
